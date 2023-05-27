@@ -1,7 +1,7 @@
 import os 
 import sys
-from src.exception import CustomException
 from src.logger import logging
+from src.exception import CustomException
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
@@ -26,7 +26,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Initiating Data Ingestion Process...")
         try:
-            df = pd.read_csv(os.path.join('notebook/data', 'gemstone.csv'))
+            df = pd.read_csv(os.path.join('notebooks/data', 'gemstone.csv'))
             logging.info("Dataset loaded as Pandas DataFrame Successfully")
             
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
@@ -48,3 +48,11 @@ class DataIngestion:
         except Exception as e:
             logging.info("Exception Occurred at Data Ingestion Stage.")
             raise CustomException(e, sys)
+
+
+#--------------------------------------
+## Run Test for Data Ingestion:
+
+# if __name__ == "__main__":
+#     obj = DataIngestion()
+#     train_data, test_data = obj.initiate_data_ingestion()
