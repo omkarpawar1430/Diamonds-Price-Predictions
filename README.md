@@ -90,4 +90,4 @@ The project is structured as follows:
 - Adjust the code in `preprocess.py` and `train.py` based on the specifics of your dataset and machine learning approach.
 - This is a basic template, and you may need to customize it further based on the nuances of your diamond price prediction task.
 
-Feel free to reach out for any clarifications or additional guidance on improving and extending this project. Good luck with your diamond price prediction machine learning project!
+
