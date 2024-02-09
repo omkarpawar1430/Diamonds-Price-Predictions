@@ -84,10 +84,5 @@ The project is structured as follows:
     python predict.py
     ```
 
-### Note:
-
-- Ensure your dataset is appropriately formatted and placed in the `data/` directory.
-- Adjust the code in `preprocess.py` and `train.py` based on the specifics of your dataset and machine learning approach.
-- This is a basic template, and you may need to customize it further based on the nuances of your diamond price prediction task.
 
 
